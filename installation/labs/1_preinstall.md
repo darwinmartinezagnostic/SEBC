@@ -1,4 +1,5 @@
-****Check vm.swappiness on all your nodes***
+```
+**Check vm.swappiness on all your nodes**
 
 [root@ip-172-31-12-99 ~]# cat /proc/sys/vm/swappiness
 30
@@ -9,7 +10,7 @@ vm.swappiness = 1
 ####################
 vm.swappiness=1
 
-****Show the mount attributes of your volume(s)***
+**Show the mount attributes of your volume(s)**
 [root@ip-172-31-12-99 ~]# df -h
 S.ficheros     Tamaño Usados  Disp Uso% Montado en
 /dev/xvda2       120G   1,2G  119G   1% /
@@ -22,14 +23,14 @@ tmpfs             15G      0   15G   0% /sys/fs/cgroup
 tmpfs            3,0G      0  3,0G   0% /run/user/1000
 
 
-*****If you have ext-based volumes, list the reserve space setting***
+**If you have ext-based volumes, list the reserve space setting**
 [root@ip-172-31-12-99 ~]# egrep "^/dev/*" /proc/mounts
 /dev/xvda2 / xfs rw,relatime,attr2,inode64,noquota 0 0
 /dev/xvdc /disk02 ext4 rw,relatime,data=ordered 0 0
 /dev/xvdb /disk01 ext4 rw,relatime,data=ordered 0 0
 
 
-*****Disable transparent hugepage support***
+**Disable transparent hugepage support**
 [root@ip-172-31-12-99 ~]# cat /sys/kernel/mm/transparent_hugepage/enabled
 [always] madvise never
 [root@ip-172-31-12-99 ~]# echo never > /sys/kernel/mm/transparent_hugepage/enabled
@@ -41,7 +42,7 @@ always madvise [never]
 [root@ip-172-31-12-99 ~]# cat /sys/kernel/mm/transparent_hugepage/defrag 
 always madvise [never]
 
-*****List your network interface configuration***
+**List your network interface configuration**
 [root@ip-172-31-12-99 ~]# ifconfig
 eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 9001
         inet 172.31.12.99  netmask 255.255.240.0  broadcast 172.31.15.255
@@ -67,7 +68,7 @@ BOOTPROTO="dhcp"
 ONBOOT="yes"
 PEERDNS="yes"
 
-*****Show that forward and reverse host lookups are correctly resolved****
+**Show that forward and reverse host lookups are correctly resolved**
 	[root@ip-172-31-12-99 ~]# getent hosts 172.31.4.254
 	172.31.4.254    ip-172-31-4-254.us-west-2.compute.internal node2
 	[root@ip-172-31-12-99 ~]# getent hosts node3
@@ -171,7 +172,7 @@ PEERDNS="yes"
 	Address: 172.31.3.136
 
 
-	****Install nscd package**
+	**Install nscd package**
 	[root@ip-172-31-12-99 ~]# yum install nscd
 	Complementos cargados:amazon-id, rhui-lb, search-disabled-repos
 	Resolviendo dependencias
@@ -238,7 +239,7 @@ PEERDNS="yes"
 	¡Listo!
 
 
-	****Install ntp package**
+	**Install ntp package**
 	[root@ip-172-31-12-99 ~]# yum install ntp
 	Complementos cargados:amazon-id, rhui-lb, search-disabled-repos
 	Resolviendo dependencias
@@ -297,7 +298,7 @@ PEERDNS="yes"
 	¡Listo!
 
 
-*****Show the nscd service is running***
+**Show the nscd service is running**
 	
 [root@ip-172-31-12-99 ~]# service nscd status
 Redirecting to /bin/systemctl status  nscd.service
@@ -329,7 +330,7 @@ oct 02 13:39:27 ip-172-31-12-99.us-west-2.compute.internal systemd[1]: Starte...
 Hint: Some lines were ellipsized, use -l to show in full.
 
 
-*****Show the ntpd service is running***
+**Show the ntpd service is running**
 [root@ip-172-31-12-99 ~]# service ntpd status
 Redirecting to /bin/systemctl status  ntpd.service
 ● ntpd.service - Network Time Service
@@ -359,8 +360,7 @@ oct 02 13:45:24 ip-172-31-12-99.us-west-2.compute.internal ntpd[9855]: 0.0.0....
 oct 02 13:45:32 ip-172-31-12-99.us-west-2.compute.internal ntpd[9855]: 0.0.0....
 Hint: Some lines were ellipsized, use -l to show in full.
 
-
-
+```
 
 
 
