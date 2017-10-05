@@ -1,6 +1,6 @@
 
 ```
-**Conexion con usuario george**
+**Conexion con unusuario george**
 
 	[root@ip-172-31-3-136 ~]# kinit george
 	Password for george@AGNOSTIC.COM: 
