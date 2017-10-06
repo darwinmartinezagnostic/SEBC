@@ -1,4 +1,4 @@
-´´´
+```
 ##The full teragen command and output
 
 	time hadoop jar /opt/cloudera/parcels/CDH/lib/hadoop-mapreduce/hadoop-mapreduce-examples.jar teragen -Ddfs.block.size=33554432 -Dmapred.map.tasks=12 -Dmapreduce.map.memory.mb=512 65536000 tgen
@@ -135,4 +135,4 @@
 
 	The filesystem under path '/user/saturn' is HEALTHY
 
-´´´
+```

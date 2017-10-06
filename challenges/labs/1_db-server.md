@@ -1,4 +1,4 @@
-´´´
+```
 ##A command and output that shows the hostname of your database server
 	[ec2-user@ip-172-31-15-216 ~]$ hostname
 	ip-172-31-15-216.us-west-2.compute.internal
@@ -27,4 +27,4 @@
 	+--------------------+
 	
 
-´´´
+```

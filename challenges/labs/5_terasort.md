@@ -1,4 +1,4 @@
-´´´
+```
 
 	[saturn@ip-172-31-15-216 ~]$ time hadoop jar /opt/cloudera/parcels/CDH/lib/hadoop-mapreduce/hadoop-mapreduce-examples.jar terasort \
 	> -Dmapreduce.job.maps=4 \
@@ -96,4 +96,4 @@
 	real	2m51.601s
 	user	0m9.384s
 	sys	0m0.413s
-´´´
+```

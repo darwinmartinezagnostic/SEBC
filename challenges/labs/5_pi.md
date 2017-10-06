@@ -1,4 +1,4 @@
-´´´
+```
 ##Run the Hadoop pi program as user haley
 
 	[haley@ip-172-31-15-216 ~]$ time hadoop jar /opt/cloudera/parcels/CDH/lib/hadoop-mapreduce/hadoop-mapreduce-examples.jar pi 10 100
@@ -96,4 +96,4 @@
 	user	0m5.073s
 	sys	0m0.261s
 
-´´´
+```

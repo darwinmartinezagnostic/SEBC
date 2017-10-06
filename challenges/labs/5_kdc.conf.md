@@ -1,4 +1,4 @@
-´´´
+```
 	[root@ip-172-31-7-128 krb5kdc]# cat kadm5.acl
 	*/admin@EXAMPLE.COM	*
 	cloudera-scm@AGNOSTIC.COM admilc
@@ -20,4 +20,4 @@
 	 }
 
 	
-´´´
+```

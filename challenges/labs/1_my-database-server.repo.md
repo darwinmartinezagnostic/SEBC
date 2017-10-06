@@ -1,4 +1,4 @@
-´´´
+```
 	[root@ip-172-31-15-216 ~]# cat /etc/yum.repos.d/mysql-community-source.repo
 	[mysql-connectors-community-source]
 	name=MySQL Connectors Community - Source
@@ -63,4 +63,4 @@
 	gpgcheck=1
 	gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql
 
-´´´
+```

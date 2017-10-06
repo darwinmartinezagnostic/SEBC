@@ -1,4 +1,4 @@
-´´´
+```
 ##The first line of the server log
 
 	[ec2-user@ip-172-31-7-128 ~]$ sudo cat /var/log/cloudera-scm-server/cloudera-scm-server.log |head -1
@@ -27,4 +27,4 @@
 
 
 
-´´´
+```

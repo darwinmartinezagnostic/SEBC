@@ -1,4 +1,4 @@
-´´´
+```
 ##List the command and output
 	[ec2-user@ip-172-31-7-128 ~]$ ls /etc/yum.repos.d
 	mysql-community.repo         redhat-rhui-client-config.repo
@@ -18,4 +18,4 @@
 
 
 
-´´´
+```

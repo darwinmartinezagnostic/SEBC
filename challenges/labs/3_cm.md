@@ -1,4 +1,4 @@
-´´´
+```
 ##The command and output for hdfs dfs -ls /user
 
 	[ec2-user@ip-172-31-15-216 ~]$ hdfs dfs -ls /user
@@ -241,4 +241,4 @@
 	  } ]
 	}
 
-´´´
+```
